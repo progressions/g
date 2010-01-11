@@ -28,4 +28,9 @@ describe 'g' do
     @g.should_receive(:notify).with($0, "g", "g!", 0, true)
     g.should == nil
   end
+  
+  it 'calls with title' do
+    @g.should_receive(:notify).with($0, 'bar', 'foo'.pretty_inspect, 0, true)
+    g('foo', :title => 'bar').should == 'foo'
+  end
 end

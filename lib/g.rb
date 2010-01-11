@@ -8,7 +8,15 @@ $g_sticky ||= true
 
 module Kernel
   def g(*args, &block)
-    growl = Growl.new $g_host, 'g', [$0]
+    
+    options = {}
+    if args.last.class == Hash
+      options = args.pop
+    end
+    
+    title = options[:title] || 'g'
+
+    growl = Growl.new $g_host, title, [$0]
 
     args.push(block) if block
 
@@ -19,7 +27,7 @@ module Kernel
         args.map { |i| i.pretty_inspect }
       end
 
-    messages.each { |i| growl.notify $0, 'g', i, $g_priority, $g_sticky }
+    messages.each { |i| growl.notify $0, title, i, $g_priority, $g_sticky }
 
     if args.empty?
       nil
