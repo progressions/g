@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "g"
+    gem.name = "progressions-g"
     gem.summary = %Q{g is like p}
     gem.description = %Q{The Kernel.g that works like Kernel.p on growl :)}
     gem.email = "progressions@gmail.com"
