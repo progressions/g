@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
      "README.markdown",
      "Rakefile",
      "VERSION",
-     "g.gemspec",
      "lib/g.rb",
      "progressions-g.gemspec",
      "spec/g_spec.rb"
