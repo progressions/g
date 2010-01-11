@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = "1.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["jugyo", "progressions"]
+  s.authors = ["jugyo", "Jeff Coleman"]
   s.date = %q{2010-01-10}
   s.description = %q{The Kernel.g that works like Kernel.p on growl :)}
   s.email = %q{progressions@gmail.com}
@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "VERSION",
      "g.gemspec",
      "lib/g.rb",
+     "progressions-g.gemspec",
      "spec/g_spec.rb"
   ]
   s.homepage = %q{http://github.com/progressions/g}
