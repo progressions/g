@@ -7,8 +7,8 @@ begin
     gem.name = "g"
     gem.summary = %Q{g is like p}
     gem.description = %Q{The Kernel.g that works like Kernel.p on growl :)}
-    gem.email = "jugyo.org@gmail.com"
-    gem.homepage = "http://github.com/jugyo/g"
+    gem.email = "progressions@gmail.com"
+    gem.homepage = "http://github.com/progressions/g"
     gem.authors = ["jugyo", "progressions"]
     gem.add_development_dependency "rspec", ">= 0"
     gem.add_dependency "ruby-growl", ">= 1.0.1"
